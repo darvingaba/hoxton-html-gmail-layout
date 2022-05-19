@@ -1,94 +1,103 @@
-
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.container{
+.container {
 
     height: 100vh;
     width: 100vw;
     display: grid;
-    grid-template: 
-    "header header header" 0.00001fr
-    "left center right" 1fr/
-    1fr 2fr 1fr;
-    grid-gap: 6px
-    ;
+    grid-template:
+        "header header header" 0.00001fr
+        "left center right" 1fr/
+        1fr 2fr 1fr;
+    grid-gap: 6px;
 }
-.container div{
+
+.container div {
     border: 1px solid #f1f3f4;
 }
-.header{
+
+.header {
     grid-area: header;
 }
-.left{
+
+.left {
     grid-area: left;
     background-color: rgb(109, 138, 164);
     border-radius: 12px;
 }
-.center{
+
+.center {
     grid-area: center;
     background-color: rgb(35, 135, 221);
     border-radius: 12px;
 }
-.right{
+
+.right {
     grid-area: right;
     background-color: antiquewhite;
     border-radius: 12px;
 }
-.header{
+
+.header {
     height: auto;
     width: auto;
     display: grid;
-    grid-template: 
-    "logo search-bar user" 0.0001fr/
-    1fr 2fr 1fr;
-    grid-gap: 6px
-    ;
+    grid-template:
+        "logo search-bar user" 0.0001fr/
+        1fr 2fr 1fr;
+    grid-gap: 6px;
 }
-.logo{
-    grid-area:logo;
+
+.logo {
+    grid-area: logo;
     border-radius: 12px;
 
 }
-.search-bar{
-    grid-area:search-bar;
+
+.search-bar {
+    grid-area: search-bar;
     border-radius: 12px;
 }
-.user{
-    grid-area:user;
+
+.user {
+    grid-area: user;
     border-radius: 12px;
 }
-.logo > img{
-    object-fit:cover;
+
+.logo>img {
+    object-fit: cover;
     width: 30%;
     margin-left: 100px;
 }
-.search-bar input{
+
+.search-bar input {
     height: 40px;
     width: 400px;
-    margin-left:150px;
+    margin-left: 150px;
     margin-top: 12px;
     border: 1px solid gray;
     border-radius: 30px;
 }
-.user{
+
+.user {
     display: grid;
     align-items: center;
     grid-template:
-    "icon username"1fr/
-    1fr 1fr;
+        "icon username" 1fr/
+        1fr 1fr;
 
 }
-.icon{
+
+.icon {
     grid-area: icon;
 
 }
+
 .username {
     grid-area: username
 }
-
